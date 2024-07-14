@@ -39,6 +39,7 @@ export default function App() {
 
     const {token} = await response.json()
     setLoginResponse(token)
+    localStorage.setItem('token', token)
   };
 
 
